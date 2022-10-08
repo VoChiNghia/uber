@@ -10,6 +10,11 @@ var tbBody = document.querySelector('#tbUber')
 
 console.log(tbBody)
 
+function emty(km,time){
+    if(km === 0 || time === 0){
+        alert("Không được để trống")
+    }
+}
 
 document.querySelector('.contact100-form-btn').onclick = function(){
    if(uberX.checked){
@@ -26,8 +31,8 @@ document.querySelector('.contact100-form-btn').onclick = function(){
         case 'uberX':{
              var km = Number(document.querySelector('.input100').value)
          var timeWait = Number(document.querySelector('.timeWait').value)
-         
-        
+       
+         emty(km,timeWait);
 
          var totalPrice = 8000
 
@@ -99,7 +104,7 @@ document.querySelector('.contact100-form-btn').onclick = function(){
               var km = Number(document.querySelector('.input100').value)
          var timeWait = Number(document.querySelector('.timeWait').value)
          var totalPrice = 9000
-
+         emty(km,timeWait);
          if(km <= 1){
            return totalPrice
          }else if(km > 1 && km <= 20){
@@ -168,7 +173,7 @@ document.querySelector('.contact100-form-btn').onclick = function(){
              var km = Number(document.querySelector('.input100').value)
      var timeWait = Number(document.querySelector('.timeWait').value)
      var totalPrice = 10000
-
+     emty(km,timeWait);
      if(km <= 1){
        return totalPrice
      }else if(km > 1 && km <= 20){
