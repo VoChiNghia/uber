@@ -4,11 +4,11 @@ var uberSUV = document.getElementById('uberSUV')
 var userX = document.getElementById('uberX')
 var uberBlack = document.getElementById('uberBlack')
 var result
-var tableArr = []
+
 var table = document.querySelector('.table')
 var tbBody = document.querySelector('#tbUber')
 
-console.log(tbBody)
+
 
 function emty(km,time){
     if(km === 0 || time === 0){
